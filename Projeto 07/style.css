@@ -5,3 +5,11 @@
   -webkit-font-snoothing: antialiased;
   -noz-osx-font-snoothing: grayscale;
 }
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
