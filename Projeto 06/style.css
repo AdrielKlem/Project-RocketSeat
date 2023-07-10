@@ -15,6 +15,9 @@ body {
   padding: 7.2rem 10.4rem;
 
   font-size: 1.6rem;
+
+  display: grid;
+  justify-content: center;
 }
 
 header {
@@ -24,11 +27,15 @@ header {
 header h1 {
   color: #02799d;
   font-size: 5.8rem;
+  font-weight: 900;
+  line-height: 7.2rem;
 }
 
 header p {
   color: #e1e1e6;
   font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4rem;
 }
 
 main {
@@ -37,7 +44,6 @@ main {
   display: grid;
 
   grid-template-columns: repeat(3, 370px);
-  place-content: center;
 
   gap: 4.8rem 6rem;
 }
