@@ -36,6 +36,45 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 700px) {
+  :root {
+    --fs-heading: 5.6rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  main {
+    grid-template-areas:
+      "A B B"
+      "C C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -82,6 +121,7 @@ main {
 .card img {
   height: 41.6rem;
   border-radius: 6px;
+  filter: brightness(0.5);
 
   object-fit: cover;
   transition: all 200ms;
@@ -101,7 +141,7 @@ main {
   left: 2.8rem;
   bottom: 5.2rem;
 
-  font-size: var(--fs-heading);
+  font-size: 4rem;
   font-weight: 800;
 
   display: flex;
@@ -126,4 +166,39 @@ main {
   align-items: center;
 
   width: fit-content;
+}
+
+/* Animação */
+
+header {
+  animation-name: topdown;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards; /* Manter a configuração da ultima animação*/
+  /* animation-direction: reverse; Inverter o processo de animação */
+  animation-delay: 200ms;
+  animation-timing-function: ease;
+  /* animation-iteration-count: infinite; */
+}
+
+main {
+  animation: downtop 700ms reverse 400ms backwards;
+  /* Backwards - Coloca as configuração da animação no elemento como propriedades inicial, mas quando termina a animação, a configuração somem voltando ao estado original */
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes downtop {
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
 }
