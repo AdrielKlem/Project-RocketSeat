@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Source Serif Pro";
+
+  font-size: 62.5%;
+  color: #a54328;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  width: 100%;
+  padding: 1.6rem 0;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6.4rem;
+}
+
+.image-cake {
+  margin: 0 auto;
+  width: 15rem;
+}
+
+h1,
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+button {
+  font-family: "Source Serif 4";
+
+  background-color: #a54328;
+  color: #fff;
+
+  border: 0;
+  border-radius: 0.6rem;
+
+  width: 14rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.recipe > p {
+  text-align: justify;
+}
+
+.preparation {
+  gap: 1.6rem;
+}
+
+.preparation > .wrapper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  h1,
+  h2 {
+    font-size: clamp(1.6rem, 1vw + 10px, 2.4rem);
+    margin-bottom: 1.6rem;
+  }
+
+  p,
+  li {
+    font-size: clamp(0.8rem, 1vw + 5px, 1.6rem);
+  }
+
+  .image-cake {
+    margin: 0 auto;
+    width: 20rem;
+  }
+
+  .container-content {
+    width: 50%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .preparation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .preparation > .wrapper-content {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+
+  .wrapper-content > div {
+    width: 50%;
+  }
+}
