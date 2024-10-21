@@ -8,23 +8,9 @@ Coleção de Projetos feito na Rocketseat - Explorer
 
 ## Projeto 5 - Cheesecake de frutas
 
-<style>
-  .image-container {
-    display: flex;
-    gap: 8px;
-  }
+- Responsivo
 
-  .image-container img {
-    border: 1px solid #000;
-    height: 200px;
-  }
-
-</style>
-
-<div class="image-container">
-  <img src="./assests/cheescake-mobile.png" alt="Imagem 1" style="object-fit: cover; max-height: 100%">
-  <img src="./assests/cheesecake-desktop.png" alt="Imagem 2">
-</div>
+![Interface Galáxia](./assests/cheesecake-desktop.png)
 
 ## Projeto 6 - Galáxia
 
